@@ -1,12 +1,10 @@
-# [Traccar Manager for iOS](https://www.traccar.org)
+# [Traccar Manager for iOS](https://www.traccar.org/manager)
+
+[![](http://images.apple.com/itunes/link/images/link-badge-appstore.png)](https://itunes.apple.com/app/traccar-manager/id1113966562)
 
 ## Overview
 
 Traccar Manager is a mobile application to manage GPS tracking devices. It requires a Traccar server instance to work.
-
-## Contributing
-
-This project uses [Carthage](https://github.com/Carthage/Carthage) to manage dependencies.  Run `carthage update --platform ios` from the project's root directory to install dependencies.
 
 ## Team
 
