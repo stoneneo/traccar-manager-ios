@@ -1,6 +1,6 @@
 # [Traccar Manager for iOS](https://www.traccar.org/manager)
 
-[![](http://images.apple.com/itunes/link/images/link-badge-appstore.png)](https://itunes.apple.com/app/traccar-manager/id1113966562)
+[![Download on the App Store](http://www.tananaev.com/badges/app-store.svg)](https://itunes.apple.com/app/traccar-manager/id1113966562)
 
 ## Overview
 
