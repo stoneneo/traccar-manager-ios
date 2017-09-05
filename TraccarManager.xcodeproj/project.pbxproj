@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBA62FC81F5E348000BEDA76 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA62FC71F5E348000BEDA76 /* libstdc++.tbd */; };
+		CBA62FCA1F5E34B800BEDA76 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA62FC91F5E34B800BEDA76 /* libsqlite3.tbd */; };
+		CBA62FCC1F5E34C200BEDA76 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA62FCB1F5E34C200BEDA76 /* libz.tbd */; };
 		CE0721131C86EB9800D057CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721121C86EB9800D057CE /* AppDelegate.swift */; };
 		CE0721151C86EB9800D057CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721141C86EB9800D057CE /* MainViewController.swift */; };
 		CE0721181C86EB9800D057CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0721161C86EB9800D057CE /* Main.storyboard */; };
@@ -36,6 +39,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBA62FB31F5E22B200BEDA76 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		CBA62FB51F5E22BB00BEDA76 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
+		CBA62FB71F5E22C300BEDA76 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		CBA62FB91F5E22D000BEDA76 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Carthage/Build/iOS/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		CBA62FBB1F5E22D900BEDA76 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		CBA62FBD1F5E22E300BEDA76 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = Carthage/Build/iOS/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		CBA62FBF1F5E22E900BEDA76 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
+		CBA62FC11F5E22F300BEDA76 /* FirebaseCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCrash.framework; path = Carthage/Build/iOS/FirebaseCrash.framework; sourceTree = "<group>"; };
+		CBA62FC31F5E22FA00BEDA76 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
+		CBA62FC71F5E348000BEDA76 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CBA62FC91F5E34B800BEDA76 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CBA62FCB1F5E34C200BEDA76 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CE07210F1C86EB9800D057CE /* TraccarManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraccarManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0721121C86EB9800D057CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0721141C86EB9800D057CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA62FCC1F5E34C200BEDA76 /* libz.tbd in Frameworks */,
+				CBA62FCA1F5E34B800BEDA76 /* libsqlite3.tbd in Frameworks */,
+				CBA62FC81F5E348000BEDA76 /* libstdc++.tbd in Frameworks */,
 				CE4BBC0B1DE844300074B0CC /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +153,18 @@
 		CE4BBC071DE83EEE0074B0CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBA62FCB1F5E34C200BEDA76 /* libz.tbd */,
+				CBA62FC91F5E34B800BEDA76 /* libsqlite3.tbd */,
+				CBA62FC71F5E348000BEDA76 /* libstdc++.tbd */,
+				CBA62FC31F5E22FA00BEDA76 /* Protobuf.framework */,
+				CBA62FC11F5E22F300BEDA76 /* FirebaseCrash.framework */,
+				CBA62FBF1F5E22E900BEDA76 /* nanopb.framework */,
+				CBA62FBD1F5E22E300BEDA76 /* GoogleToolboxForMac.framework */,
+				CBA62FBB1F5E22D900BEDA76 /* FirebaseInstanceID.framework */,
+				CBA62FB91F5E22D000BEDA76 /* FirebaseNanoPB.framework */,
+				CBA62FB71F5E22C300BEDA76 /* FirebaseCoreDiagnostics.framework */,
+				CBA62FB51F5E22BB00BEDA76 /* FirebaseCore.framework */,
+				CBA62FB31F5E22B200BEDA76 /* FirebaseAnalytics.framework */,
 				CE4BBC0A1DE844300074B0CC /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -150,6 +180,7 @@
 				CE07210B1C86EB9800D057CE /* Sources */,
 				CE07210C1C86EB9800D057CE /* Frameworks */,
 				CE07210D1C86EB9800D057CE /* Resources */,
+				CBA62FB01F5E1A9D00BEDA76 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -209,7 +240,7 @@
 					CE07210E1C86EB9800D057CE = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = YW49KTJKFW;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
 					};
 					CE0721221C86EB9800D057CE = {
 						CreatedOnToolsVersion = 7.2;
@@ -271,6 +302,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBA62FB01F5E1A9D00BEDA76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FirebaseAnalytics.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FirebaseCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FirebaseCoreDiagnostics.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FirebaseNanoPB.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FirebaseInstanceID.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GoogleToolboxForMac.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/nanopb.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FirebaseCrash.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Protobuf.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Google\" ]; then\ncp -r \"${PROJECT_DIR}/../traccar-shared/google-services/traccar-manager-ios.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n/usr/local/bin/carthage copy-frameworks\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE07210B1C86EB9800D057CE /* Sources */ = {
@@ -334,6 +390,117 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CBA62FAA1F5E143600BEDA76 /* Google */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Google;
+		};
+		CBA62FAB1F5E143600BEDA76 /* Google */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = YW49KTJKFW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TraccarManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					nanopb,
+					"-framework",
+					FirebaseNanoPB,
+					"-framework",
+					FirebaseAnalytics,
+					"-framework",
+					FirebaseCore,
+					"-framework",
+					FirebaseCoreDiagnostics,
+					"-framework",
+					FirebaseInstanceID,
+					"-framework",
+					GoogleToolboxForMac,
+					"-framework",
+					FirebaseCrash,
+					"-framework",
+					Protobuf,
+				);
+				OTHER_SWIFT_FLAGS = "-D FIREBASE";
+				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Google;
+		};
+		CBA62FAC1F5E143600BEDA76 /* Google */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YW49KTJKFW;
+				INFOPLIST_FILE = TraccarManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TraccarManager.app/TraccarManager";
+			};
+			name = Google;
+		};
+		CBA62FAD1F5E143600BEDA76 /* Google */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YW49KTJKFW;
+				INFOPLIST_FILE = TraccarManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TraccarManager;
+				USES_XCTRUNNER = YES;
+			};
+			name = Google;
+		};
 		CE0721351C86EB9800D057CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -426,12 +593,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YW49KTJKFW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TraccarManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -440,10 +614,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YW49KTJKFW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TraccarManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -514,6 +694,7 @@
 			buildConfigurations = (
 				CE0721351C86EB9800D057CE /* Debug */,
 				CE0721361C86EB9800D057CE /* Release */,
+				CBA62FAA1F5E143600BEDA76 /* Google */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -523,6 +704,7 @@
 			buildConfigurations = (
 				CE0721381C86EB9800D057CE /* Debug */,
 				CE0721391C86EB9800D057CE /* Release */,
+				CBA62FAB1F5E143600BEDA76 /* Google */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -532,6 +714,7 @@
 			buildConfigurations = (
 				CE07213B1C86EB9800D057CE /* Debug */,
 				CE07213C1C86EB9800D057CE /* Release */,
+				CBA62FAC1F5E143600BEDA76 /* Google */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -541,6 +724,7 @@
 			buildConfigurations = (
 				CE07213E1C86EB9800D057CE /* Debug */,
 				CE07213F1C86EB9800D057CE /* Release */,
+				CBA62FAD1F5E143600BEDA76 /* Google */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

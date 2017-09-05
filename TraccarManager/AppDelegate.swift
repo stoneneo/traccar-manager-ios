@@ -15,6 +15,9 @@
 //
 
 import UIKit
+#if FIREBASE
+import Firebase
+#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,6 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
             self.window?.makeKeyAndVisible()
         }
+        #if FIREBASE
+        FirebaseApp.configure()
+        #endif
         return true
     }
 
