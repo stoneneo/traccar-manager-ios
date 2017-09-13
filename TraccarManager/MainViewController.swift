@@ -32,6 +32,7 @@ class MainViewController: UIViewController, WKUIDelegate {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: viewFrame, configuration: webConfiguration)
         webView.uiDelegate = self
+        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         view.addSubview(webView)
         
