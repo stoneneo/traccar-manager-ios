@@ -40,9 +40,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNI-oS-S9a">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNI-oS-S9a">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traccar Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v6-sD-Gsd" userLabel="Title">
@@ -83,10 +82,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1149011925" green="0.53284794089999998" blue="0.89823412899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lNI-oS-S9a" firstAttribute="leading" secondItem="D6D-xb-gGA" secondAttribute="leading" id="4KA-pQ-r3q"/>
                             <constraint firstItem="9rJ-sw-k3E" firstAttribute="centerY" secondItem="WfE-A8-W7r" secondAttribute="centerY" id="7id-wi-ozd"/>
                             <constraint firstItem="f6K-5s-OQ0" firstAttribute="top" secondItem="WfE-A8-W7r" secondAttribute="bottom" constant="16" id="G3a-uH-V1g"/>
                             <constraint firstAttribute="leadingMargin" secondItem="f6K-5s-OQ0" secondAttribute="leading" id="GfA-rD-F7W"/>
                             <constraint firstItem="4v6-sD-Gsd" firstAttribute="centerX" secondItem="D6D-xb-gGA" secondAttribute="centerX" id="LHu-BP-868"/>
+                            <constraint firstItem="lNI-oS-S9a" firstAttribute="top" secondItem="UFS-Tw-BJG" secondAttribute="bottom" id="P0s-lf-JUy"/>
+                            <constraint firstAttribute="trailing" secondItem="lNI-oS-S9a" secondAttribute="trailing" id="Ti0-JS-8t6"/>
+                            <constraint firstItem="bNZ-fd-5Ma" firstAttribute="top" secondItem="lNI-oS-S9a" secondAttribute="bottom" id="UN6-qL-ImG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f6K-5s-OQ0" secondAttribute="trailing" id="bPa-fy-183"/>
                             <constraint firstAttribute="leadingMargin" secondItem="9rJ-sw-k3E" secondAttribute="leading" id="fqw-lk-1rP"/>
                             <constraint firstItem="ckZ-jN-Z0U" firstAttribute="centerX" secondItem="D6D-xb-gGA" secondAttribute="centerX" id="g59-PN-uRI"/>
