@@ -303,13 +303,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TraccarManager/Pods-TraccarManager-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Google\" ]; then\nGOOGLE_APP_ID=`cat ../traccar-shared/google-services/traccar-manager-ios.plist | grep \"<string>1:\" | cut -f2 -d\">\" | cut -f1 -d\"<\"`\ncp -r \"${PROJECT_DIR}/../traccar-shared/google-services/traccar-manager-ios.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"../traccar-shared/firebase/traccar-manager-ios.json\"\nfi\n";
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Google\" ]; then\ncp -r \"${PROJECT_DIR}/../traccar-shared/google-services/traccar-manager-ios.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\"${PODS_ROOT}/Fabric/run\"\nfi\n";
 		};
 		F7116A91529FBE675B09F050 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
