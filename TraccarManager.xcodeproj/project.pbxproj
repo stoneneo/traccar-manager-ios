@@ -209,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Google\" ]; then\ncp -r \"${PROJECT_DIR}/../traccar-shared/google-services/traccar-manager-ios.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\"${PODS_ROOT}/Fabric/run\"\nfi\n";
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Google\" ]; then\ncp -r \"${PROJECT_DIR}/../environment/google-services/traccar-manager-ios.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\"${PODS_ROOT}/Fabric/run\"\nfi\n";
 		};
 		F7116A91529FBE675B09F050 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
