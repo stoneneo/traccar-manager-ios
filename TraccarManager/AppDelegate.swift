@@ -110,7 +110,4 @@ extension AppDelegate : MessagingDelegate {
         broadcaseToken(fcmToken)
     }
 
-    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
-    }
-
 }
