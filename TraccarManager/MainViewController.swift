@@ -65,8 +65,14 @@ extension MainViewController : WKScriptMessageHandler {
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if let body = message.body as? String {
-            if body.contains("login") {
+            if body.starts(with: "login") {
                 NotificationCenter.default.post(name: MainViewController.eventLogin, object: nil)
+            } else if body.starts(with: "server") {
+                let urlString = String(body[body.index(body.startIndex, offsetBy: 7)...])
+                UserDefaults.standard.set(urlString, forKey: "url")
+                if let url = URL(string: urlString) {
+                    self.webView.load(URLRequest(url: url))
+                }
             }
         }
     }
