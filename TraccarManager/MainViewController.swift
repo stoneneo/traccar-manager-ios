@@ -76,8 +76,8 @@ class MainViewController: UIViewController, WKUIDelegate {
         view.addSubview(self.webView)
         
         group.notify(queue: DispatchQueue.main) {
-            self.loadPage()
             self.initialized = true
+            self.loadPage()
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(onTerminate(_:)), name: UIApplication.willResignActiveNotification, object: nil)
@@ -90,6 +90,7 @@ class MainViewController: UIViewController, WKUIDelegate {
             var urlComponents = URLComponents(string: urlString)
             if let eventId = pendingEventId {
                 urlComponents?.queryItems = [URLQueryItem(name: "eventId", value: eventId)]
+                pendingEventId = nil
             }
             if let url = urlComponents?.url {
                 self.webView.load(URLRequest(url: url))
@@ -123,7 +124,9 @@ class MainViewController: UIViewController, WKUIDelegate {
     @objc func onEvent(_ notification: Notification) {
         if let eventId = notification.userInfo?[MainViewController.keyEventId] as? String {
             pendingEventId = eventId
-            loadPage()
+            if initialized {
+                loadPage()
+            }
         }
     }
 
