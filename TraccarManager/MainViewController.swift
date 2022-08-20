@@ -21,9 +21,13 @@ class MainViewController: UIViewController, WKUIDelegate {
     
     static let eventLogin = Notification.Name("eventLogin")
     static let eventToken = Notification.Name("eventToken")
+    static let eventEvent = Notification.Name("eventEvent")
     static let keyToken = "keyToken"
+    static let keyEventId = "keyEventId"
     
     var webView: WKWebView!
+    var initialized = false
+    var pendingEventId: String? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,18 +76,30 @@ class MainViewController: UIViewController, WKUIDelegate {
         view.addSubview(self.webView)
         
         group.notify(queue: DispatchQueue.main) {
-            if let urlString = userDefaults.object(forKey: "url") as? String,
-               let url = URL(string: urlString) {
-                self.webView.load(URLRequest(url: url))
-            }
+            self.loadPage()
+            self.initialized = true
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(onTerminate(_:)), name: UIApplication.willResignActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(onReceive(_:)), name: MainViewController.eventToken, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onEvent(_:)), name: MainViewController.eventEvent, object: nil)
+    }
+    
+    private func loadPage() {
+        if let urlString = UserDefaults.standard.object(forKey: "url") as? String {
+            var urlComponents = URLComponents(string: urlString)
+            if let eventId = pendingEventId {
+                urlComponents?.queryItems = [URLQueryItem(name: "eventId", value: eventId)]
+            }
+            if let url = urlComponents?.url {
+                self.webView.load(URLRequest(url: url))
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: MainViewController.eventEvent, object: nil)
         NotificationCenter.default.removeObserver(self, name: MainViewController.eventToken, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIApplication.willResignActiveNotification, object: nil)
     }
@@ -101,6 +117,13 @@ class MainViewController: UIViewController, WKUIDelegate {
         if let token = notification.userInfo?[MainViewController.keyToken] {
             let code = "updateNotificationToken && updateNotificationToken('\(token)')"
             webView.evaluateJavaScript(code, completionHandler: nil)
+        }
+    }
+
+    @objc func onEvent(_ notification: Notification) {
+        if let eventId = notification.userInfo?[MainViewController.keyEventId] as? String {
+            pendingEventId = eventId
+            loadPage()
         }
     }
 

@@ -70,15 +70,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         completionHandler(UIBackgroundFetchResult.newData)
     }
     
-    func broadcaseToken(_ token: String) {
-        let dataDict = [MainViewController.keyToken: token]
-        NotificationCenter.default.post(name: MainViewController.eventToken, object: nil, userInfo: dataDict)
-    }
-    
     @objc func onReceive(_ notification:Notification) {
         InstanceID.instanceID().instanceID { (result, error) in
             if let result = result {
-                self.broadcaseToken(result.token)
+                NotificationCenter.default.post(
+                    name: MainViewController.eventToken, object: nil, userInfo: [MainViewController.keyToken: result.token])
             }
         }
     }
@@ -99,6 +95,10 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
             _ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse,
             withCompletionHandler completionHandler: @escaping () -> Void) {
 
+        if let eventId = response.notification.request.content.userInfo["eventId"] {
+            NotificationCenter.default.post(
+                name: MainViewController.eventEvent, object: nil, userInfo: [MainViewController.keyEventId: eventId])
+        }
         completionHandler()
     }
 
@@ -107,7 +107,8 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
 extension AppDelegate : MessagingDelegate {
 
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        broadcaseToken(fcmToken)
+        NotificationCenter.default.post(
+            name: MainViewController.eventToken, object: nil, userInfo: [MainViewController.keyToken: fcmToken])
     }
 
 }
