@@ -29,6 +29,8 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Access system using Face ID or Touch ID</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location permission is required to display current location on the map.</string>
 	<key>UILaunchStoryboardName</key>

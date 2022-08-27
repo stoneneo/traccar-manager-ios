@@ -1,5 +1,5 @@
 //
-// Copyright 2016 - 2022 Anton Tananaev (anton.tananaev@gmail.com)
+// Copyright 2016 - 2022 Anton Tananaev (anton@traccar.org)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -137,7 +137,18 @@ extension MainViewController : WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if let body = message.body as? String {
             if body.starts(with: "login") {
+                if body.count > 6 {
+                    let token = String(body[body.index(body.startIndex, offsetBy: 6)...])
+                    SecurityManager.shared.saveToken(token)
+                }
                 NotificationCenter.default.post(name: MainViewController.eventLogin, object: nil)
+            } else if body.starts(with: "authentication") {
+                if let token = SecurityManager.shared.readToken() {
+                    let code = "handleLoginToken && handleLoginToken('\(token)')"
+                    webView.evaluateJavaScript(code, completionHandler: nil)
+                }
+            } else if body.starts(with: "logout") {
+                SecurityManager.shared.deleteToken()
             } else if body.starts(with: "server") {
                 let urlString = String(body[body.index(body.startIndex, offsetBy: 7)...])
                 UserDefaults.standard.set(urlString, forKey: "url")

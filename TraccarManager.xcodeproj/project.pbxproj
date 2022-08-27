@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E887A2428B954D500C76583 /* SecurityManager.swift */; };
 		7F25895EC8ECCA622198A065 /* Pods_TraccarManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E4ACB29C4071C1E4616715 /* Pods_TraccarManager.framework */; };
 		CE0721131C86EB9800D057CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721121C86EB9800D057CE /* AppDelegate.swift */; };
 		CE0721151C86EB9800D057CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721141C86EB9800D057CE /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		14E4ACB29C4071C1E4616715 /* Pods_TraccarManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraccarManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E59E82D21565CF500C9A9E3 /* TraccarManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TraccarManager.entitlements; sourceTree = "<group>"; };
+		5E887A2428B954D500C76583 /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
 		65D3CBF7B321EF362B612AD4 /* Pods-TraccarManager.google.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraccarManager.google.xcconfig"; path = "Pods/Target Support Files/Pods-TraccarManager/Pods-TraccarManager.google.xcconfig"; sourceTree = "<group>"; };
 		689FD56695DF2F5A7EC22801 /* Pods-TraccarManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraccarManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TraccarManager/Pods-TraccarManager.debug.xcconfig"; sourceTree = "<group>"; };
 		6BBDB883F012E7478BFD5C90 /* Pods-TraccarManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraccarManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-TraccarManager/Pods-TraccarManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				CE0721121C86EB9800D057CE /* AppDelegate.swift */,
 				CE850DB51E18EF0A00F4F73A /* StartViewController.swift */,
 				CE0721141C86EB9800D057CE /* MainViewController.swift */,
+				5E887A2428B954D500C76583 /* SecurityManager.swift */,
 				CE0721161C86EB9800D057CE /* Main.storyboard */,
 				CE0721191C86EB9800D057CE /* Assets.xcassets */,
 				CE07211B1C86EB9800D057CE /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 				CE850DB61E18EF0A00F4F73A /* StartViewController.swift in Sources */,
 				CE0721151C86EB9800D057CE /* MainViewController.swift in Sources */,
 				CE0721131C86EB9800D057CE /* AppDelegate.swift in Sources */,
+				5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
