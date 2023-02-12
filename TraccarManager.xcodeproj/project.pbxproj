@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E887A2428B954D500C76583 /* SecurityManager.swift */; };
-		7F25895EC8ECCA622198A065 /* Pods_TraccarManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E4ACB29C4071C1E4616715 /* Pods_TraccarManager.framework */; };
 		CE0721131C86EB9800D057CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721121C86EB9800D057CE /* AppDelegate.swift */; };
 		CE0721151C86EB9800D057CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721141C86EB9800D057CE /* MainViewController.swift */; };
 		CE0721181C86EB9800D057CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0721161C86EB9800D057CE /* Main.storyboard */; };
@@ -19,12 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14E4ACB29C4071C1E4616715 /* Pods_TraccarManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraccarManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E59E82D21565CF500C9A9E3 /* TraccarManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TraccarManager.entitlements; sourceTree = "<group>"; };
 		5E887A2428B954D500C76583 /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
-		65D3CBF7B321EF362B612AD4 /* Pods-TraccarManager.google.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraccarManager.google.xcconfig"; path = "Pods/Target Support Files/Pods-TraccarManager/Pods-TraccarManager.google.xcconfig"; sourceTree = "<group>"; };
-		689FD56695DF2F5A7EC22801 /* Pods-TraccarManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraccarManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TraccarManager/Pods-TraccarManager.debug.xcconfig"; sourceTree = "<group>"; };
-		6BBDB883F012E7478BFD5C90 /* Pods-TraccarManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraccarManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-TraccarManager/Pods-TraccarManager.release.xcconfig"; sourceTree = "<group>"; };
 		CE07210F1C86EB9800D057CE /* TraccarManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraccarManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0721121C86EB9800D057CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0721141C86EB9800D057CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,30 +37,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4BBC0B1DE844300074B0CC /* WebKit.framework in Frameworks */,
-				7F25895EC8ECCA622198A065 /* Pods_TraccarManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A62847073DF220918EA9CF03 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				689FD56695DF2F5A7EC22801 /* Pods-TraccarManager.debug.xcconfig */,
-				6BBDB883F012E7478BFD5C90 /* Pods-TraccarManager.release.xcconfig */,
-				65D3CBF7B321EF362B612AD4 /* Pods-TraccarManager.google.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CE0721061C86EB9800D057CE = {
 			isa = PBXGroup;
 			children = (
 				CE0721111C86EB9800D057CE /* TraccarManager */,
 				CE0721101C86EB9800D057CE /* Products */,
 				CE4BBC071DE83EEE0074B0CC /* Frameworks */,
-				A62847073DF220918EA9CF03 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				CE4BBC0A1DE844300074B0CC /* WebKit.framework */,
-				14E4ACB29C4071C1E4616715 /* Pods_TraccarManager.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,12 +91,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0721371C86EB9800D057CE /* Build configuration list for PBXNativeTarget "TraccarManager" */;
 			buildPhases = (
-				F7116A91529FBE675B09F050 /* [CP] Check Pods Manifest.lock */,
 				CE07210B1C86EB9800D057CE /* Sources */,
 				CE07210C1C86EB9800D057CE /* Frameworks */,
 				CE07210D1C86EB9800D057CE /* Resources */,
 				CBA62FB01F5E1A9D00BEDA76 /* ShellScript */,
-				27D44FBE5A8BDB8366C3735E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,30 +159,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27D44FBE5A8BDB8366C3735E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TraccarManager/Pods-TraccarManager-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TraccarManager/Pods-TraccarManager-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CBA62FB01F5E1A9D00BEDA76 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,24 +171,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Google\" ]; then\ncp -r \"${PROJECT_DIR}/../environment/google-services/traccar-manager-ios.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\nfi\n";
-		};
-		F7116A91529FBE675B09F050 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TraccarManager-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -322,7 +260,6 @@
 		};
 		CBA62FAB1F5E143600BEDA76 /* Google */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65D3CBF7B321EF362B612AD4 /* Pods-TraccarManager.google.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -451,7 +388,6 @@
 		};
 		CE0721381C86EB9800D057CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 689FD56695DF2F5A7EC22801 /* Pods-TraccarManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -474,7 +410,6 @@
 		};
 		CE0721391C86EB9800D057CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BBDB883F012E7478BFD5C90 /* Pods-TraccarManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
