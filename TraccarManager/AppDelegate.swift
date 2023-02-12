@@ -1,5 +1,5 @@
 //
-// Copyright 2016 Anton Tananaev (anton@traccar.org)
+// Copyright 2016 - 2023 Anton Tananaev (anton@traccar.org)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -71,10 +71,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     @objc func onReceive(_ notification:Notification) {
-        InstanceID.instanceID().instanceID { (result, error) in
-            if let result = result {
+        Messaging.messaging().token { (token, _) in
+            if let token = token {
                 NotificationCenter.default.post(
-                    name: MainViewController.eventToken, object: nil, userInfo: [MainViewController.keyToken: result.token])
+                    name: MainViewController.eventToken, object: nil, userInfo: [MainViewController.keyToken: token])
             }
         }
     }
@@ -106,9 +106,11 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
 
 extension AppDelegate : MessagingDelegate {
 
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        NotificationCenter.default.post(
-            name: MainViewController.eventToken, object: nil, userInfo: [MainViewController.keyToken: fcmToken])
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        if let fcmToken = fcmToken {
+            NotificationCenter.default.post(
+                name: MainViewController.eventToken, object: nil, userInfo: [MainViewController.keyToken: fcmToken])
+        }
     }
 
 }

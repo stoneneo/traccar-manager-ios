@@ -6,14 +6,6 @@
 
 Traccar Manager is a mobile application to manage GPS tracking devices. It requires a Traccar server instance to work.
 
-## Build
-
-Project uses CocoaPods for dependencies management. To build the project you need to download dependencies:
-
-```
-pod install
-```
-
 ## Team
 
 - Anton Tananaev ([anton@traccar.org](mailto:anton@traccar.org))
