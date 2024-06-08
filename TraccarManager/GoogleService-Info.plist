@@ -2,22 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>554695010155-en52f8678n0jppji6sf38dlu8hb4u6uc.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.554695010155-en52f8678n0jppji6sf38dlu8hb4u6uc</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBRJ8mRlFZSHSIS6_CU6wjvuG8JbNay410</string>
+	<string>AIzaSyApJes44Zv9NaV6L7tf-yESeQxrUrm1ogA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>554695010155</string>
+	<string>880464471503</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.gorillasoft.carsat</string>
+	<string>com.gorillasoft.rastreogpsplus</string>
 	<key>PROJECT_ID</key>
-	<string>carsatfirebase</string>
+	<string>plus01-traccar-sesotec</string>
 	<key>STORAGE_BUCKET</key>
-	<string>carsatfirebase.appspot.com</string>
+	<string>plus01-traccar-sesotec.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:554695010155:ios:da20da0db1739095944e2e</string>
-	<key>DATABASE_URL</key>
-	<string>https://carsatfirebase.firebaseio.com</string>
+	<string>1:880464471503:ios:1ebc5a1402f8b64289deba</string>
 </dict>
 </plist>
