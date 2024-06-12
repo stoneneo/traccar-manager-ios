@@ -289,7 +289,7 @@
 				DEVELOPMENT_TEAM = Z43QV9873F;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Rastreo GPS Plus 1.0";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rastreo Satelital Plus 1.0";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -422,7 +422,7 @@
 				DEVELOPMENT_TEAM = Z43QV9873F;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Rastreo GPS Plus 1.0";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rastreo Satelital Plus 1.0";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,7 +449,7 @@
 				DEVELOPMENT_TEAM = Z43QV9873F;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Rastreo GPS Plus 1.0";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rastreo Satelital Plus 1.0";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
