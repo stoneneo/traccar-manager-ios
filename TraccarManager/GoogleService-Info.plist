@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCS6OqrrsSu03z9s07A5MaZC7xRh4J7V3c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>510958259916</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.gorillasoft.setecc</string>
+	<key>PROJECT_ID</key>
+	<string>traccar-setecc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>traccar-setecc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:510958259916:ios:05fd95db9eca749076bc69</string>
+</dict>
+</plist>
