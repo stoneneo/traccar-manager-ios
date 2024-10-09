@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCS6OqrrsSu03z9s07A5MaZC7xRh4J7V3c</string>
+	<string>AIzaSyD_HK1wmUFy_z9975jJDrdIFTSoQ3GkVXE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>510958259916</string>
+	<string>477297922097</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.gorillasoft.setecc</string>
+	<string>com.gorillasoft.norrisgps</string>
 	<key>PROJECT_ID</key>
-	<string>traccar-setecc</string>
+	<string>norris-gps</string>
 	<key>STORAGE_BUCKET</key>
-	<string>traccar-setecc.appspot.com</string>
+	<string>norris-gps.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:510958259916:ios:05fd95db9eca749076bc69</string>
+	<string>1:477297922097:ios:36b8eec408ffb3bc3bc510</string>
+	<key>DATABASE_URL</key>
+	<string>https://norris-gps.firebaseio.com</string>
 </dict>
 </plist>
