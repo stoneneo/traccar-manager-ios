@@ -18,6 +18,7 @@
 		CE07211D1C86EB9800D057CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE07211B1C86EB9800D057CE /* LaunchScreen.storyboard */; };
 		CE4BBC0B1DE844300074B0CC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4BBC0A1DE844300074B0CC /* WebKit.framework */; };
 		CE850DB61E18EF0A00F4F73A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE850DB51E18EF0A00F4F73A /* StartViewController.swift */; };
+		E5CAE9E82D2384A2006B89CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5CAE9E72D2384A2006B89CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CE07211E1C86EB9800D057CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4BBC0A1DE844300074B0CC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CE850DB51E18EF0A00F4F73A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		E5CAE9E72D2384A2006B89CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		CE0721111C86EB9800D057CE /* TraccarManager */ = {
 			isa = PBXGroup;
 			children = (
+				E5CAE9E72D2384A2006B89CF /* GoogleService-Info.plist */,
 				5E59E82D21565CF500C9A9E3 /* TraccarManager.entitlements */,
 				CE0721121C86EB9800D057CE /* AppDelegate.swift */,
 				CE850DB51E18EF0A00F4F73A /* StartViewController.swift */,
@@ -128,7 +131,6 @@
 				TargetAttributes = {
 					CE07210E1C86EB9800D057CE = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = YW49KTJKFW;
 						LastSwiftMigration = 1100;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -165,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE07211D1C86EB9800D057CE /* LaunchScreen.storyboard in Resources */,
+				E5CAE9E82D2384A2006B89CF /* GoogleService-Info.plist in Resources */,
 				CE07211A1C86EB9800D057CE /* Assets.xcassets in Resources */,
 				CE0721181C86EB9800D057CE /* Main.storyboard in Resources */,
 			);
@@ -283,9 +286,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TraccarManager/TraccarManager.entitlements;
 				CURRENT_PROJECT_VERSION = 20;
-				DEVELOPMENT_TEAM = YW49KTJKFW;
+				DEVELOPMENT_TEAM = Z43QV9873F;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rassatel;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +297,7 @@
 				);
 				MARKETING_VERSION = 4.1;
 				OTHER_SWIFT_FLAGS = "-D FIREBASE";
-				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorillasoft.rassatel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
@@ -414,9 +418,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TraccarManager/TraccarManager.entitlements;
 				CURRENT_PROJECT_VERSION = 20;
-				DEVELOPMENT_TEAM = YW49KTJKFW;
+				DEVELOPMENT_TEAM = Z43QV9873F;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rassatel;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,7 +429,7 @@
 				);
 				MARKETING_VERSION = 4.1;
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorillasoft.rassatel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -439,9 +444,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TraccarManager/TraccarManager.entitlements;
 				CURRENT_PROJECT_VERSION = 20;
-				DEVELOPMENT_TEAM = YW49KTJKFW;
+				DEVELOPMENT_TEAM = Z43QV9873F;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rassatel;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +455,7 @@
 				);
 				MARKETING_VERSION = 4.1;
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorillasoft.rassatel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
